@@ -1,0 +1,40 @@
+# ========== C/C++ 编译产物 ==========
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# build 编译输出文件夹
+build/
+bin/
+Debug/
+Release/
+
+# ========== CLion / CMake 专属缓存 ==========
+cmake-build-*/
+CMakeCache.txt
+
+# ========== VSCode 编辑器缓存 ==========
+.vscode/
+*.code-workspace
+
+# ========== JetBrains(CLion) 隐藏配置文件夹【强烈推荐加上】 ==========
+.idea/
+
+# ========== 操作系统垃圾文件 ==========
+Thumbs.db
+.DS_Store
+
+# ========== 日志、临时文件 ==========
+*.log
+*.tmp
+temp/
+
+# ========== vim临时文件 ==========
+*.swp
+*.swo
