@@ -1,0 +1,54 @@
+# CLion / JetBrains IDE 配置
+.idea/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
+.idea/**/dataSources
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/dbnavigator.xml
+.idea/modules.xml
+.idea/caches/
+*.iml
+*.iws
+*.ipr
+
+# CMake 编译输出
+cmake-build-debug/
+cmake-build-release/
+cmake-build-*/
+build/
+out/
+
+# 编译产物、二进制
+*.o
+*.obj
+*.exe
+*.out
+*.app
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# 日志、临时文件
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS 系统垃圾
+.DS_Store
+Thumbs.db
+
+# 如果你后面用到conda/python，可以打开下面两行
+# __pycache__/
+# .venv/
