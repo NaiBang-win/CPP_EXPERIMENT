@@ -18,7 +18,7 @@ public:
     MyString(const MyString& other_string)
         :size (other_string.size)
     {
-        _data = new char[capacity];
+        _data = new char[other_string.size+1];
         for (int i = 0;i<other_string.size;i++)
         {
             _data[i] = other_string._data[i];

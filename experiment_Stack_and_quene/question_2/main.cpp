@@ -25,6 +25,7 @@ int priority(char c)
 std::string transform(char* zhong)
 {
     std::string result;
+    std::string s= "+-*/(";
     std::stack<char> st;
     for (int i=0;i<strlen(zhong);i++)
     {
@@ -33,7 +34,8 @@ std::string transform(char* zhong)
         {
             continue;
         }
-        if (c>='0'&&c<='9'||c>='a'&&c<='z')
+        else if (c>='0'&&c<='9'||c>='a'&&c<='z'||c=='.'
+            ||c=='-'&&(i==0||s.find(zhong[i-1])!=std::string::npos))
         {
             result+=c;
         }
@@ -49,6 +51,10 @@ std::string transform(char* zhong)
                 st.pop();
             }
             st.pop();
+        }
+        else if (c=='+'&&(i==0||s.find(zhong[i-1])!=std::string::npos))
+        {
+            continue;
         }
         else if (st.empty())
         {

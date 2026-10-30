@@ -37,6 +37,7 @@ public:
     {
         if (is_full())
         {
+            cout<<"队列为满"<<endl;
             return;
         }
         else
@@ -100,4 +101,17 @@ int main()
     quene.clear();
     cout<<"测试一下没有的情况头删"<<endl;
     quene.pop_front();
+    cout<<"加满测一下"<<endl;
+    quene.push_back(5);
+    quene.push_back(5);
+    quene.push_back(5);
+    quene.push_back(5);
+    quene.push_back(5);
+    quene.push_back(5);
+    quene.push_back(5);
+    quene.push_back(5);
+    quene.push_back(5);
+    quene.pointer();
+    quene.push_back(5);
+
 }
