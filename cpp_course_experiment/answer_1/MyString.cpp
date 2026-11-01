@@ -9,7 +9,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <iostream>
-
+#include<cassert>
 
 #include <chrono>
 #define PRINT_INFO
@@ -112,6 +112,10 @@ public:
             return true;
         return false;
     }
+    void operator<<(char* s)
+    {
+        *this+=s;
+    }
 };
 
 std::ostream& operator<<(std::ostream& o, const MyString& str) {
@@ -123,7 +127,7 @@ std::ostream& operator<<(std::ostream& o, const MyString& str) {
 
 
 int main(){
-    
+    std::string s="";
     
     return 0;
 }
